@@ -1,0 +1,29 @@
+h1 {
+    color:  rgb(159, 161, 184);
+}
+h2 {
+    font-style:italic; 
+}
+
+.left {
+    float: left;
+    width: 29%;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(159, 161, 184);
+}
+
+.right {
+    float: right;
+    width: 69%;
+    padding: 5px;
+}
+
+.fontstyle {
+    font-size: large;
+    color:white;
+}
+
+.maintext {
+    font-family: Arial;
+}
