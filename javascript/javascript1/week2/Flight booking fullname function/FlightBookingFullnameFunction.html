@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="flightBookingFullnameFunction.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div>
+    <label for="firstname">Write your firstname</label>
+    <input placeholder="Firstname" type="text" Id="firstname">
+  </div>
+  <div>
+    <label for="lastname">Write your lastname</label>
+    <input placeholder="Lastname" type="text" Id="lastname">
+  </div>
+  <div>
+    <input name="use-formal-name" type="checkbox" Id="user-check">
+    <label for="formal">Use formal name</label>
+  </div>
+  <button onclick="getFullname()">Show Full Name</button>
+  <button onclick="get(user-check.value)">Show</button>
+</body>
+</html>
