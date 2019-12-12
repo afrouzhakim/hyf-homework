@@ -67,3 +67,16 @@ const rating = movies.filter(items => {
     return item.rating;
 });
 console.log (rating);
+
+//Count the total number of movies containing any of following keywords: Surfer, Alien or Benjamin
+const containSpacialWords = movies.filter(items => {
+    let titles = items.title;
+    let split = titles.split(" ");
+    if(split.includes("Surfer")|| split.includes("Alien") || split.includes("Benjamin")){
+        return true 
+    } else {
+        return false
+    }
+});
+const containSpecialWordsCount = containSpacialWords.length;
+console.log(containSpecialWordsCount);
