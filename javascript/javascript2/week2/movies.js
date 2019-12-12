@@ -26,3 +26,15 @@ longTitle = (arr) => {
 }
 console.log (longTitle (movies));
 
+//number of movies made between 1980-1989 
+movieNumber = (arr) => {
+    const movieNumbers = arr.filter (function(arrIndexes){
+        if (arrIndexes.year >= 1980 &&  arrIndexes.year<= 1989) {
+            return true;
+        } else {
+            return false;
+        }
+    })
+    return movieNumbers.length;
+}
+console.log (movieNumber (movies));
