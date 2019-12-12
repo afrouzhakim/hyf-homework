@@ -44,7 +44,6 @@ console.log (movieNumber (movies));
 
 //add good-average-bad tag
 const newArray = movies;
-
 newArray.map(items => {
     if(items.rating >= 7){
    return items.tag = "Good";
@@ -56,3 +55,15 @@ newArray.map(items => {
     }
 });
 console.log(newArray);
+
+// chaining exercise 
+const rating = movies.filter(items => {
+    if (items.rating > 6) {
+        return true;
+    } else {
+        return false;
+    }
+}).map(item => {
+    return item.rating;
+});
+console.log (rating);
