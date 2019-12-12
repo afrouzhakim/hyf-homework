@@ -13,3 +13,16 @@ shortTitle = (arr) => {
 }
 console.log (shortTitle (movies));
 
+//I define long title as titles with more than 5 character
+longTitle = (arr) => {
+    const longTitles = arr.filter (function(arrIndexes){
+        if ((arrIndexes.title).length >= 5) {
+            return true;
+        } else {
+            return false;
+        }
+    })
+    return longTitles;
+}
+console.log (longTitle (movies));
+
