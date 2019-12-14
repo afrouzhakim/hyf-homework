@@ -80,3 +80,21 @@ const containSpacialWords = movies.filter(items => {
 });
 const containSpecialWordsCount = containSpacialWords.length;
 console.log(containSpecialWordsCount);
+
+//word in the title is duplicated
+let duplicatedWord = movies.filter (items => {
+    let titles = items.title.split (' ');
+    for (let i=0; i < titles.length; i++) {
+        let firstWord = titles[i].toLowerCase();
+        for (let j=i+1; j < titles.length; j++ ) {
+            let secondWord = titles [j].toLowerCase();
+            if (firstWord === secondWord) {
+                return true;
+            }
+        }
+    }
+    return false;
+});
+
+const newDuplicatedWord = duplicatedWord.map(item => item.title);
+console.log(newDuplicatedWord);
