@@ -57,3 +57,33 @@ select * from user
 join user_task on user.id = user_task.user_id
 join task on task.id = user_task.task_id
 where user.name like '%Maryrose Meadows%';
+
+Part 4: Meal application
+create table `meal` (
+`id` int(10) unsigned not null auto_increment primary key,
+`title` varchar(255) not null,
+`description` text not null,
+`location` varchar(255) not null,
+`when` datetime not null,
+`max_reservations` int(10) unsigned not null,
+`price` decimal(6,4) ,
+`created_date` date not null
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+create table `reservation` (
+`id` int(10) unsigned not null auto_increment primary key,
+`number_of_guests` int(10) unsigned not null,
+`meal_id` int(10) unsigned not null,
+`created_date` date not null,
+  constraint `fk_meal` foreign key (`meal_id`) references `meal` (`id`) on delete cascade on update cascade
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+create table `review` (
+`id` int(10) unsigned not null auto_increment primary key,
+`title` varchar(255) not null,
+`description` text null,
+`meal_id` int(10) unsigned not null,
+`stars` int(5) unsigned null,
+  constraint `fk_meal_review` foreign key (`meal_id`) references `meal` (`id`) on delete cascade on update cascade
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
