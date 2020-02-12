@@ -14,7 +14,7 @@ Mark a task as complete
 update task set status_id = 3 where id = 36;
 Delete a task
 delete from task where id = 36;
-select count(*), created from task group by month (10);
+select count(*), created from task group by wher month(created)=10;
 
 
 Part 2: School database
