@@ -1,3 +1,5 @@
+//How much time of my life have I been watching series on tv?
+
 const lifespan = 80 * 525949; // 80 years in minutes
 const seriesDurations = [
 {
