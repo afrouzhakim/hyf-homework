@@ -1,3 +1,4 @@
+// The function has to return the time it will take to arrive at your destination
 const travelInformation = {
   speed: 50,
   destinationDistance: 432,
