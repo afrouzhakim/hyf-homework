@@ -1,26 +1,44 @@
 [
-    {
-      "id": 1,
-      "name": "Afrouz Hakimzadeh",
-      "email": "afrouz@gmail.com",
-      "mealId": 1
-    },
-    {
-      "id": 2,
-      "name": "Kasper Cederholm",
-      "email": "Kasper@gmail.com",
-      "mealId": 3
-    },
-    {
-      "id": 3,
-      "name": "Sarah Pederson",
-      "email": "sarah@gmail.com",
-      "mealId": 2
-    },
-    {
-      "id": 4,
-      "name": "Nikita Mahda",
-      "email": "Nikita@gmail.com",
-      "mealId": 1
-    }
-  ]
+  {
+    "id": 1,
+    "name": "Benjamin Hughes",
+    "email": "benjamin@hughes.dk",
+    "mealId": 1
+  },
+  {
+    "id": 2,
+    "name": "krithi",
+    "email": "krithi@gmail.com",
+    "mealId": 2
+  },
+  {
+    "id": 3,
+    "name": "bengu",
+    "email": "mochi@hotmail.com",
+    "mealId": 2
+  },
+  {
+    "id": 4,
+    "name": "mekdes",
+    "email": "mekdes@gmail.com",
+    "mealId": 3
+  },
+  {
+    "id": 5,
+    "name": "Habatmu",
+    "email": "yesmek88@yahoo.com",
+    "mealId": 4
+  },
+  {
+    "id": 6,
+    "name": "Enku Habtamu",
+    "email": "enku@yahoo.com",
+    "mealId": 7
+  },
+  {
+    "id": 7,
+    "name": "Ahmed",
+    "email": "ahmed@yahoo.com",
+    "mealId": 4
+  }
+]
