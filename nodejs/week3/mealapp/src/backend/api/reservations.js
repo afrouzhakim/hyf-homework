@@ -21,10 +21,10 @@ router.post("/", async(request, response) => {
         const newReservation = {
             number_of_guests,
             meal_id,
-            created_date,
+            created_date
           };
          const addReservation = await knex("reservation").insert(newReservation);
-         response.send("addReservation");
+         response.send(`Reservation with id ${id} is added`);
     }catch (error) {
         throw error;
       }
@@ -44,7 +44,7 @@ router.put("/:id", async(request, response) => {
     const newReservation = {
         number_of_guests,
         meal_id,
-        created_date,
+        created_date
       }
     await knex("reservation").where({ id }).update({ number_of_guests, meal_id, created_date });
     response.send(`Reservation with id ${id} is updated`);
