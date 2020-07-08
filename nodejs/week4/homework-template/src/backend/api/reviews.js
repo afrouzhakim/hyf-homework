@@ -17,16 +17,16 @@ router.get("/", async (request, response) => {
 //post a new review
 router.post("/", async(request, response) => {
     try {
-        const { title, descrioption, meal_id, stars, created_date } = request.query;  
+        const { title, description, meal_id, stars, created_date } = request.query;  
         const newReview = {
             title, 
-            descrioption, 
+            description, 
             meal_id, 
             stars, 
             created_date
           };
          const addReview = await knex("review").insert(newReview);
-         response.send(`Review with id ${id} is added`);
+         response.send(`Review with meal_id ${meal_id} is added`);
     }catch (error) {
         throw error;
       }

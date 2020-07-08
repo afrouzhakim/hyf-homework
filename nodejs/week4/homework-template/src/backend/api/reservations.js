@@ -17,11 +17,15 @@ router.get("/", async (request, response) => {
 //post a new reservation
 router.post("/", async(request, response) => {
     try {
-        const { id, number_of_guests, meal_id, created_date } = request.query;  
+        const {id, number_of_guests, meal_id, created_date, guest_name, guest_phonenumber, guest_email } = request.body;  
         const newReservation = {
+            id,  
             number_of_guests,
             meal_id,
-            created_date
+            created_date,
+            guest_name,
+            guest_phonenumber,
+            guest_email
           };
          const addReservation = await knex("reservation").insert(newReservation);
          response.send(`Reservation with id ${id} is added`);
@@ -46,7 +50,7 @@ router.put("/:id", async(request, response) => {
         meal_id,
         created_date
       }
-    await knex("reservation").where({ id }).update({ number_of_guests, meal_id, created_date });
+    await knex("reservation").where({ id }).update({ number_of_guests, meal_id, created_date, guest_name, guest_phonenumber, guest_email });
     response.send(`Reservation with id ${id} is updated`);
   });
 //Deletes the reservation by id

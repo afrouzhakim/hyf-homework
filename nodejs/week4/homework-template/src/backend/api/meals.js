@@ -4,14 +4,14 @@ const router = express.Router();
 const knex = require("../database");
 const { request, response } = require("express");
 //get all the meals
-// router.get("/", async (request, response) => {
-//   try {
-//     let meals = await knex("meal").select("title");
-//     response.json(meals);
-//   } catch (error) {
-//     throw error;
-//   }
-// });
+router.get("/", async (request, response) => {
+  try {
+    let meals = await knex("meal").select("title", "description");
+    response.json(meals);
+  } catch (error) {
+    throw error;
+  }
+});
 // // //post a new meal
 router.post("/", async(request, response) => {
   
@@ -21,7 +21,7 @@ router.post("/", async(request, response) => {
       title,
       maxNumberOfGuests,
       description,
-      createdAt,
+      created_date,
       price
     }=request.body;
     const newMeal = {
@@ -29,7 +29,7 @@ router.post("/", async(request, response) => {
       title,
       maxNumberOfGuests,
       description,
-      createdAt,
+      created_date,
       price 
     }
    const addMeal = await knex("meal").insert(newMeal);
