@@ -1,12 +1,11 @@
 window.handleHomeRequest = () => {
   document.body.innerHTML = ` 
   <header>
-    <div class="menu">
-    <div class="logo">
-    <a href="/" data-navigo><h1>Meal Sharing</h1></a>
+    <h1>Meal Sharing</h1>
     </div>
       <ul>
-        <a href="meals" data-navigo>Meals</a>
+        <li><a href="home" data-navigo>Home</a></li>
+        <li><a href="meals" data-navigo>Meals</a></li>
       </ul>
     </div>
   </header>
