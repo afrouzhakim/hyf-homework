@@ -5,7 +5,7 @@ const path = require("path");
 
 const mealsRouter = require("./api/meals");
 const reservationsRouter = require("./api/reservations");
-const reviewsRouter = require("./api/review");
+const reviewsRouter = require("./api/reviews");
 
 const port = process.env.PORT || 3000;
 

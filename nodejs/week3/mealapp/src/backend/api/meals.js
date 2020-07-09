@@ -4,14 +4,14 @@ const router = express.Router();
 const knex = require("../database");
 const { request, response } = require("express");
 //get all the meals
-// router.get("/", async (request, response) => {
-//   try {
-//     let meals = await knex("meal").select("title");
-//     response.json(meals);
-//   } catch (error) {
-//     throw error;
-//   }
-// });
+router.get("/", async (request, response) => {
+  try {
+    let meals = await knex("meal").select("title");
+    response.json(meals);
+  } catch (error) {
+    throw error;
+  }
+});
 // // //post a new meal
 router.post("/", async(request, response) => {
   

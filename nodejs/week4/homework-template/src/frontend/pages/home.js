@@ -1,11 +1,5 @@
 window.handleHomeRequest = () => {
   document.body.innerHTML = ` 
-  <html>
-  <head>
-   <title> Meal Shering Website </title>
-  </head>
-  
-  <body>
   <header>
     <div class="menu">
     <div class="logo">
@@ -19,7 +13,7 @@ window.handleHomeRequest = () => {
   <main>
     <div class="header-img"></div>
   </main>
-  </body>
+
   <html/>
   `;
 
