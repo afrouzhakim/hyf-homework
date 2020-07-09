@@ -10,10 +10,10 @@ window.handleHomeRequest = () => {
   </div>
   </header>
   <main>
-    <div class="header-img"></div>
+    <div class="slidercontainer">
+      <img src= "https://news.uchicago.edu/sites/default/files/styles/full_width/public/images/2018-12/shutterstock_427193719_0.jpg?itok=e3RwipKT">
+    </div>
   </main>
-
-  <html/>
   `;
 
   // if any links are added to the dom, use this function
