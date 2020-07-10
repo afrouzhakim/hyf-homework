@@ -1,5 +1,3 @@
-//const apiKey = '8242b938a229ad17e2c4b6633c5f1e80';
-//const weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?q=copenhagen&appid=';
 function fetchData() {
     let city= document.getElementById("city").value;
     return fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=8242b938a229ad17e2c4b6633c5f1e80`)
