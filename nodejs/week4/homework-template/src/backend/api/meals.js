@@ -6,12 +6,15 @@ const { request, response } = require("express");
 //get all the meals
 router.get("/", async (request, response) => {
   try {
-    let meals = await knex("meal").select("title", "description");
+    let meals = await knex("meal").select("id","title", "description", "location", "when", "max_reservations", "price","created_date", "meal_url");
+    //;
     response.json(meals);
+    console.log(meals);
   } catch (error) {
     throw error;
   }
 });
+
 // // //post a new meal
 router.post("/", async(request, response) => {
   
@@ -19,18 +22,24 @@ router.post("/", async(request, response) => {
     const {
       id,
       title,
-      maxNumberOfGuests,
       description,
+      location,
+      when,
+      max_reservations,
+      price,
       created_date,
-      price
+      meal_url
     }=request.body;
     const newMeal = {
       id,
       title,
-      maxNumberOfGuests,
       description,
+      location,
+      when,
+      max_reservations,
+      price,
       created_date,
-      price 
+      meal_url 
     }
    const addMeal = await knex("meal").insert(newMeal);
    response.send(addMeal);
@@ -55,7 +64,7 @@ router.put("/:id", async(request, response) => {
     description,
     createdAt,
     price} = request.body;
-  await knex("meal").where({ id }).update({ title, maxNumberOfGuests, description, createdAt, price });
+  await knex("meal").where({ id }).update({ title, description, location, when, max_reservations, price, created_date, meal_url});
   response.send(`Meal with id ${id} is updated`);
 });
 
