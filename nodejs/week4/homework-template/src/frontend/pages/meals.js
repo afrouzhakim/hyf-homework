@@ -8,7 +8,6 @@ window.handleMealsRequest = async () => {
     <h1>Meal Sharing</h1>
     <ul>
       <li><a href="home" data-navigo>Home</a></li>
-      <li><a href="meals" data-navigo>Meals</a></li>
     </ul>
   </div>
   </header>
@@ -29,18 +28,18 @@ window.handleMealsRequest = async () => {
         ${meal.title}
       </h3>         
       </li>`
-    }).join('')}
+    }).join('')
+  }
     </ul>
   </div>
   </div>`;
-  
 };
 
   
   
 
 
-{/* <div class="bodycontainer">
+/* <div class="bodycontainer">
   <h3>
   <ul>
   <li>${meals[0].id}</li>
@@ -54,4 +53,4 @@ window.handleMealsRequest = async () => {
   <li>${meals[0].meal_url}</li>
   </ul>
   </h3>
-  </div> */}
+  </div> */

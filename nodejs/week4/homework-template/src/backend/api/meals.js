@@ -9,7 +9,7 @@ router.get("/", async (request, response) => {
     let meals = await knex("meal").select("id","title", "description", "location", "when", "max_reservations", "price","created_date", "meal_url");
     //;
     response.json(meals);
-    console.log(meals);
+    //console.log(meals);
   } catch (error) {
     throw error;
   }

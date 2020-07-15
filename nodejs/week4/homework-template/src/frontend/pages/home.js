@@ -1,7 +1,7 @@
 window.handleHomeRequest = () => {
   document.body.innerHTML = ` 
   <header>
-  <div class="header-nav-bar">
+  <div>
     <h1>Meal Sharing</h1>
     <ul>
       <li><a href="home" data-navigo>Home</a></li>
@@ -10,7 +10,7 @@ window.handleHomeRequest = () => {
   </div>
   </header>
   <main>
-    <div class="slidercontainer">
+    <div class="bannercontainer">
       <img src= "https://news.uchicago.edu/sites/default/files/styles/full_width/public/images/2018-12/shutterstock_427193719_0.jpg?itok=e3RwipKT">
     </div>
   </main>
