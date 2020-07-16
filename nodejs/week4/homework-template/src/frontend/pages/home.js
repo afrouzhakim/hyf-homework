@@ -2,7 +2,7 @@ window.handleHomeRequest = () => {
   document.body.innerHTML = ` 
   <header>
   <div>
-    <h1>Meal Sharing</h1>
+    <h3>Meal Sharing</h3>
     <ul>
       <li><a href="home" data-navigo>Home</a></li>
       <li><a href="meals" data-navigo>Meals</a></li>

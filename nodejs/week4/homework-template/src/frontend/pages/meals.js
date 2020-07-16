@@ -5,14 +5,14 @@ window.handleMealsRequest = async () => {
   document.body.innerHTML = `
   <header>
   <div class="header-nav-bar">
-    <h1>Meal Sharing</h1>
+    <h3>Meal Sharing</h3>
     <ul>
       <li><a href="home" data-navigo>Home</a></li>
     </ul>
   </div>
   </header>
   <div class="bodycontainer">
-  <div>Select a meal</div>
+  <div>select a meal to see more details and make a reservation:</div>
   <div class="meallist">
     <ul>
     ${meals.map(meal=> {
@@ -23,7 +23,7 @@ window.handleMealsRequest = async () => {
           <span style="background-image:url('${meal.meal_url}');"></span>
         </div> 
       </a>
-      <span>${meal.price} kr</span>
+      <span><h3>${meal.price}kr</h3></span>
       <h3>
         ${meal.title}
       </h3>         

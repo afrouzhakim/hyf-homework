@@ -17,9 +17,8 @@ router.get("/", async (request, response) => {
 //post a new reservation
 router.post("/", async(request, response) => {
     try {
-        const {id, number_of_guests, meal_id, created_date, guest_name, guest_phonenumber, guest_email } = request.body;  
+        const {number_of_guests, meal_id, created_date, guest_name, guest_phonenumber, guest_email } = request.body;  
         const newReservation = {
-            id,  
             number_of_guests,
             meal_id,
             created_date,
@@ -28,7 +27,7 @@ router.post("/", async(request, response) => {
             guest_email
           };
          const addReservation = await knex("reservation").insert(newReservation);
-         response.send(`Reservation with id ${id} is added`);
+         response.send(`Your reservation is added`);
     }catch (error) {
         throw error;
       }

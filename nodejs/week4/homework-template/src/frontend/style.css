@@ -3,14 +3,14 @@
   font-family: 'Montserrat', sans-serif;
 }
 body, input, textarea, select{font-family:Roboto;font-size:14px;letter-spacing:0.06em;}
-html, body, ul, li, p{list-style:none;padding:0px;margin:0px;}
+html, body, ul, li, p, h3{list-style:none;padding:0px;margin:0px;}
 html, body{height: 100%;width: 100%;color: #707070;}
-
-h1, h2, h3, h4, h5, p{font-weight:normal;padding:0px;margin:0px;}
+h1, h2, h4, h5, p{font-weight:normal;padding:0px;margin:0px;}
 h1{font-size:40px;text-transform: uppercase;font-weight: bold;}
 h2{font-size:40px;margin-bottom: 10px;}
-h3{font-size:20px;margin-bottom: 10px;}
+
 p{font-size:14px;line-height: 22px;}
+
 
 select, textarea{
   border-color: #d2d6d9;
@@ -47,24 +47,43 @@ body{background: #e7e7e7;}
 header{
   background-color: rgba(52, 58, 64, 0.39);
   color: rgb(238, 86, 26);
-  padding: 15px 9% 3px 9%;
+  padding: 2% 2% 2% 2%;
   position: fixed;
   z-index: 10;
   width: 100%;
+}
+header div{
+  display: flex;
+  justify-content: space-evenly;
 }
 header h1{
   justify-content: flex-start;  
   display: flex;
 }
-header ul{
+header ul, h3{
   margin: 2% 0 0 4%;
+  position: relative;
+  padding: 15px 9% 3px 9%;
+  
   /*justify-content: end;
   display: flex;*/
 }
-header ul li{
-  display: inline;margin: 0 2%;
- /* padding-right:1%;
-  padding-left: 1%;*/
+header div ul li{
+  /*display: inline;margin: 0 2%;*/
+  padding-right:55px;
+  padding-left: 55px;
+}
+header div ul{
+  display: flex;
+  margin: 2% 2% 2% 2%;
+  justify-content: flex-end;
+}
+header div ul li{
+  display: inline;
+  margin: 2% 2% 2% 2%;
+  justify-content: end;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 header ul li a:link, header ul li a:visited{
   color:rgb(238, 86, 26);
@@ -93,6 +112,7 @@ header ul li a:active, header ul li a:hover{
 .bannercontainer img{
   width: 100%;
 }
+
 .meallist{
   padding: 3% 0 0;
   margin-bottom: 5%;
@@ -117,15 +137,14 @@ header ul li a:active, header ul li a:hover{
 }
 
 .meallist ul li span:nth-child(2) {
-  position: absolute;
-top: 0px;
-right: 0px;
-background: #0000006e;
+position: absolute;
+bottom: 5%;
+right: 5%;
+/*background: #0000006e;
 color: #fff;
 padding: 10px;
 /*border-radius: 10px 0;*/
 }
-
 .meallist ul li a span{
   transition: all 2s;
   width: 100%;
@@ -133,20 +152,17 @@ padding: 10px;
   display: block;background-size: cover;
 }
 .meallist ul li a:hover span{
-  /* background-size: 110%; */
+/* background-size: 110%; */
 /* background-position-x: center; */
 transform: scale(1.2);
 /* background-position-y: center; */
 }
-
 .meallist ul li h3{
   margin: 20px 0px 7px;
   float: left;
   width: 69%;
 }
-
-
-.meallist ul li .action a{
+/*.meallist ul li .action a{
   float: left;
   margin: 20px 0 0 10px;
 }
@@ -154,20 +170,18 @@ transform: scale(1.2);
   content: attr(alt);
   display: block;
   position: absolute;
-  padding: 11px 13px;
   background-color: #000000ad;
   bottom: 50px;
   border-radius: 4px;
   color: #fff;
   right: 0px;
-}
+}*/
   
-.meallist ul li .action a img:hover{
+.meallist ul li a img:hover{
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
-
 }
 
 
