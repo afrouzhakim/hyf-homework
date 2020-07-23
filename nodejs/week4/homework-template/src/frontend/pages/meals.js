@@ -34,12 +34,8 @@ window.handleMealsRequest = async () => {
   </div>
   </div>`;
 };
-
-  
-  
-
-
-/* <div class="bodycontainer">
+/**
+ * <div class="bodycontainer">
   <h3>
   <ul>
   <li>${meals[0].id}</li>
@@ -53,4 +49,10 @@ window.handleMealsRequest = async () => {
   <li>${meals[0].meal_url}</li>
   </ul>
   </h3>
-  </div> */
+  </div> 
+ */
+  
+  
+
+
+ 

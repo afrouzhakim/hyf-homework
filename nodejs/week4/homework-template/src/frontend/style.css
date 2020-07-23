@@ -145,15 +145,21 @@ padding: 10px;
 /*border-radius: 10px 0;*/
 }
 .meallist ul li a span{
-  transition: all 2s;
+  /*transition: all 2s;*/
   width: 100%;
   height: 100%;  
   display: block;background-size: cover;
 }
+.meallist div span{
+  /*transition: all 2s;*/
+  width: 100%;
+  height: 100%; 
+  display: block;background-size: cover;
+}
 .meallist ul li a:hover span{
-/* background-size: 110%; */
-/* background-position-x: center; */
-transform: scale(1.2);
+ background-size: 110%; 
+ background-position-x: center; 
+/*transform: scale(1.2);*/
 /* background-position-y: center; */
 }
 .meallist ul li h3{
@@ -182,7 +188,22 @@ transform: scale(1.2);
   backface-visibility: hidden;
   perspective: 1000px;
 }
-
+.formcontainer{
+  width: 100%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.formcontainer input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
 
 
