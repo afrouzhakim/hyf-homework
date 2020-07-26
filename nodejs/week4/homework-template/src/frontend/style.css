@@ -97,9 +97,19 @@ header ul li a:active, header ul li a:hover{
 }
 /*body css*/
 .bodycontainer{
-  padding: 9% 6% 3%;
-  /*position: relative;
-  height:65%;*/
+  padding: 15% 6% 3%;
+  position: relative;
+  height:65%;
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .bannercontainer{
   width: 100%;
@@ -189,7 +199,7 @@ padding: 10px;
   perspective: 1000px;
 }
 .formcontainer{
-  width: 100%;
+  /*width: 100%;*/
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
