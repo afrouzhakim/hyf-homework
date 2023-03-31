@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="animalNameGenerationStyle.css">
+    <title>javascript</title>
 </head>
 <body>
-    <input id = "username">
-    <button id = "getname" onclick="getusername()">Get User Name</button>
-    <button><a href="index0.html">Back</a></button>
+    <div class="container">
+        <h1>Spirit animal name generator</h1>
+
+        <label for="event">When do you want the spirit animal name to be created</label>
+        <select id="event">
+            <option value="1">By clicking 'spirit animal name' button</option>
+            <option value="2">By hovering on input field</option>
+            <option value="3">while writing the name</option>
+        </select>
+        <button class ="myBtn" onclick="button()">spirit animal name</button><br><br>
+        <label for="name">Enter your name</label>
+        <input type="text" id="name" placeholder="Your name here" value="" />
+        <p id="spirit-name"></p>
+    </div>
     <script type="text/javascript" src="animalNameGenerator.js"></script>
 </body>
 </html>
